@@ -16,6 +16,8 @@ A local, privacy-friendly **RAG (Retrieval-Augmented Generation)** chatbot that 
 - **Grounded answers** - the model is instructed to say "I don't know" instead of hallucinating
 - **Clean custom UI** - modern card-based Streamlit interface with an external stylesheet
 
+![AskVista screenshot](assets/demo1.png) 
+
 ## How it works
 
 ```
