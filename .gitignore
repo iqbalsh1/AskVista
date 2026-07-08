@@ -1,0 +1,26 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Virtual environments ---
+cb_venv/
+
+# --- Vector store ---
+chromaDB/
+
+# --- Private documents---
+data/*.pdf
+
+# --- Streamlit ---
+.streamlit/secrets.toml
+
+# --- IDE ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
