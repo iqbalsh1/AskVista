@@ -28,7 +28,6 @@ PDF ──▶ PyPDFLoader ──▶ Text splitter (500-char chunks)
                      ChromaDB (persistent)
                               │
                               ▼
-
         question ──▶ retriever ──▶ prompt ──▶ llama3.2 ──▶ answer
 ```
 
@@ -48,13 +47,15 @@ ollama pull mxbai-embed-large
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/askvista.git
+git clone https://github.com/<iqbalsh1>/askvista.git
 cd askvista
 
 # 2. Create and activate a virtual environment
 python -m venv .venv
+
 # Windows:
 .venv\Scripts\activate
+
 # macOS/Linux:
 source .venv/bin/activate
 
