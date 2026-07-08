@@ -1,0 +1,181 @@
+/* ==========================================================================
+   AskVista — Streamlit custom theme
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Global reset */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Hide default Streamlit chrome */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+header { visibility: hidden; }
+
+/* Page background */
+.stApp {
+    background: #F7F7F8;
+}
+
+/* Main container width */
+.block-container {
+    max-width: 780px !important;
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+}
+
+/* ----- Header card -------------------------- */
+.header-card {
+    background: #ffffff;
+    border: 1px solid #E5E5E5;
+    border-radius: 14px;
+    padding: 28px 32px 22px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-icon {
+    width: 52px;
+    height: 52px;
+    background: #534AB7;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.header-text h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0 0 4px;
+}
+
+.header-text p {
+    font-size: 13px;
+    color: #888888;
+    margin: 0;
+}
+
+.status-pill {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #ECFDF5;
+    border: 1px solid #A7F3D0;
+    border-radius: 20px;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: #065F46;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.dot-green {
+    width: 7px;
+    height: 7px;
+    background: #10B981;
+    border-radius: 50%;
+}
+
+/* ---- Suggestion chips --------------------------  */
+.chips-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.chip {
+    background: #ffffff;
+    border: 1px solid #E0DFFB;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+    color: #534AB7;
+    cursor: default;
+    font-weight: 500;
+}
+
+/* ---- Input area -------------------------- */
+.stTextInput > div > div > input {
+    background: #ffffff !important;
+    border: 1.5px solid #E5E5E5 !important;
+    border-radius: 10px !important;
+    padding: 14px 16px !important;
+    font-size: 14px !important;
+    color: #111111 !important;
+    box-shadow: none !important;
+    transition: border-color 0.15s;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: #534AB7 !important;
+    box-shadow: 0 0 0 3px rgba(83, 74, 183, 0.08) !important;
+}
+
+.stTextInput > div > div > input::placeholder {
+    color: #AAAAAA !important;
+}
+
+/* -- Answer card --------------------------  */
+.answer-card {
+    background: #ffffff;
+    border: 1px solid #E5E5E5;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-top: 16px;
+}
+
+.answer-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #534AB7;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.answer-body {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #222222;
+}
+
+/* ----- Source badge -------------------------- */
+.source-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #F5F4FF;
+    border: 1px solid #E0DFFB;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 11px;
+    color: #534AB7;
+    margin-top: 14px;
+    font-weight: 500;
+}
+
+/* ---- Spinner -------------------------- */
+.stSpinner > div {
+    border-top-color: #534AB7 !important;
+}
+
+/* ---- Footer note -------------------------- */
+.footer-note {
+    text-align: center;
+    font-size: 11px;
+    color: #BBBBBB;
+    margin-top: 32px;
+}
